@@ -2,9 +2,11 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div>
+        <>
+        <div className='content' style={{flex:"1"}}>
             <h1>Hello</h1>
         </div>
+        </>
     )
 }
 
