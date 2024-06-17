@@ -1,4 +1,3 @@
-import './style.css'
 import React from 'react'
 
 interface NavbarProps {
@@ -7,9 +6,9 @@ interface NavbarProps {
 
 const Navbar = ({hasBackButton}:NavbarProps) => {
     return (
-        <header className='navbar' style={{ backgroundColor: "#D97373", height:"6vh", display: "flex", alignItems: "center"}}>
+        <header className='navbar' style={{ backgroundColor: "#D97373", height: "5vh", textAlign: "center", position: "sticky", top: "0", width: "100%" }}>
         
-        {hasBackButton && (<button>{"<"}</button>) }
+            {hasBackButton && (<button>{`<`}</button>)}
             
         </header>
     )
